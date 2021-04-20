@@ -1,7 +1,6 @@
 
 ## (To run this repo)
-## Requirements
-### Required Packages
+## Required Packages
 * **python**3 or above
 * **PyTorch**1.0.0
 * **numpy**1.18.2
@@ -15,7 +14,7 @@ pip install numpy==1.18.2
 pip install scikit-learn
 ```
 
-### Dataset
+## Dataset
 ESC: [Ethereum Smart Contracts](https://drive.google.com/open?id=1h9aFFSsL7mK4NmVJd4So7IJlFj9u0HRv)
 
 VSC: [Vntchain Smart Contacts](https://drive.google.com/open?id=1FTb__ERCOGNGM9dTeHLwAxBLw7X5Td4v)
@@ -45,12 +44,12 @@ done
 Then, you can find the training results in the `logs/`.
 
 
-### Reference
+## Reference
 1. The code borrows from [graph_unet](https://github.com/bknyaz/graph_nn)
 2. Thomas N. Kipf, Max Welling, Semi-Supervised Classification with Graph Convolutional Networks, ICLR 2017
 
 
-### Citation
+## Citation
 Please use this citation if you want to cite our [paper](https://www.ijcai.org/Proceedings/2020/0454.pdf) or codebase in your paper:
 ```
 @inproceedings{ijcai2020-454,
