@@ -2,11 +2,41 @@
 - Yuan et al. (IJCAI 2020)(https://www.ijcai.org/Proceedings/2020/0454.pdf)
 
 ## Motivation
-Current approaches for smart contract vulnerability detection are mainly based on symbolic execution methods and dynamic execution methods from the programming language community, which led to two major limitations: first, existing methods heavily rely on several expert-defined hard rules (or patterns) to detect smart contract vulnerability; second, the scalability of these rules is limited as there are only a few number of experts who defined the rules.
+Current approaches for smart contract vulnerability detection, Reentrancy, Timestamp dependence and Infinite Loop, are mainly based on symbolic execution methods and dynamic execution methods from the programming language community, which led to two major limitations: first, existing methods heavily rely on several expert-defined hard rules (or patterns) to detect smart contract vulnerability; second, the scalability of these rules is limited as there are only a few number of experts who defined the rules.
+
+## Methodology 
+The author proposed a graph-based method to conduct the smart contract vulnerability detection to eliminate the dependence on these expert-defined hard rules.
+
+The overall architecture of the method consists of three phases: 
+
+1. Graph generation phase, which extracts the control flow and data flow semantics from the source code and explicitly models the fallback mechanism 
+2. Graph normalization phase inspired by k-partite graph
+3. Neural network inferencing phase for vulnerability detection
+
+### 1. Graph Generation
+The proposed method starts with a graph generation process. Specifically, the source code of a smart contract is characterized as a contract graph according to the data and control dependencies between program statements. Nodes in the graph represent critical function invocations or variables while edges capture their temporal execution traces. Major nodes symbolize the in-vocations to customized or built-in functions that are important for detecting the specific vulnerability. Secondary nodes are used to model critical variables, e.g., user balance and bonus flag. Fall-back nodes are constructed to stimulate the fallback function of an attack contract, which can interact with the function under test. Each edge describes a path that might be traversed through by the contract function, and the temporal number of the edge characterizes its order in the function.
+
+### 2. Graph normalization
+The author normalized the constructed graph to highlight the importance of some of the central nodes in the graph when propagating information using the graph. Specifically, the Secondary nodes and Fall-back nodes are eliminated while the information of them are propagated to the neighboring major nodes.
+
+### 3. Neural network inferencing
+In this phase, the author proposed two Neural Network methods to conduct vulnerability detection.
+
+### 3.1 Degree-free GCN (DR-GCN)
+// fig
+The author proposed a degree-free GCN (DR-GCN), a graph convolutional neural network which ingored the degree matrix in propagating process.
+
+### 3.2 Temporal Message Propagation network (TMP)
+// fig
+To take into account that there are distinct roles and temporal relationships of different program elements, Temporal Message Propagation network (TMP) is proposed vulnerability modeling and detection.
+
+
+## Result
+// fig
 
 
 
-## (To run this repo)
+# Running the method
 ## Required Packages
 * **python**3 or above
 * **PyTorch**1.0.0
