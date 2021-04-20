@@ -1,5 +1,5 @@
 
-# (To run this repo)
+## (To run this repo)
 ## Requirements
 ### Required Packages
 * **python**3 or above
@@ -50,7 +50,7 @@ Then, you can find the training results in the `logs/`.
 2. Thomas N. Kipf, Max Welling, Semi-Supervised Classification with Graph Convolutional Networks, ICLR 2017
 
 
-## Citation
+### Citation
 Please use this citation if you want to cite our [paper](https://www.ijcai.org/Proceedings/2020/0454.pdf) or codebase in your paper:
 ```
 @inproceedings{ijcai2020-454,
