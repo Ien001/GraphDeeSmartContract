@@ -1,3 +1,10 @@
+# Smart Contract Vulnerability Detection Using Graph Neural Networks
+- Yuan et al. (IJCAI 2020)(https://www.ijcai.org/Proceedings/2020/0454.pdf)
+
+## Motivation
+Current approaches for smart contract vulnerability detection are mainly based on symbolic execution methods and dynamic execution methods from the programming language community, which led to two major limitations: first, existing methods heavily rely on several expert-defined hard rules (or patterns) to detect smart contract vulnerability; second, the scalability of these rules is limited as there are only a few number of experts who defined the rules.
+
+
 
 ## (To run this repo)
 ## Required Packages
