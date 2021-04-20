@@ -23,16 +23,16 @@ The author normalized the constructed graph to highlight the importance of some 
 In this phase, the author proposed two Neural Network methods to conduct vulnerability detection.
 
 ### 3.1 Degree-free GCN (DR-GCN)
-// fig
+![DR-GCN](https://github.com/Ien001/GraphDeeSmartContract/blob/master/DR-GCN.png)
 The author proposed a degree-free GCN (DR-GCN), a graph convolutional neural network which ingored the degree matrix in propagating process.
 
 ### 3.2 Temporal Message Propagation network (TMP)
-// fig
+![TMP](https://github.com/Ien001/GraphDeeSmartContract/blob/master/TMP.png)
 To take into account that there are distinct roles and temporal relationships of different program elements, Temporal Message Propagation network (TMP) is proposed vulnerability modeling and detection.
 
 
 ## Result
-// fig
+![Result](https://github.com/Ien001/GraphDeeSmartContract/blob/master/Result.png)
 
 
 
