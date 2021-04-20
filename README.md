@@ -15,24 +15,16 @@ pip install numpy==1.18.2
 pip install scikit-learn
 ```
 
+### Dataset
+ESC: [Ethereum Smart Contracts](https://drive.google.com/open?id=1h9aFFSsL7mK4NmVJd4So7IJlFj9u0HRv)
 
-## Citation
-Please use this citation if you want to cite our [paper](https://www.ijcai.org/Proceedings/2020/0454.pdf) or codebase in your paper:
-```
-@inproceedings{ijcai2020-454,
-  title     = {Smart Contract Vulnerability Detection using Graph Neural Network},
-  author    = {Zhuang, Yuan and Liu, Zhenguang and Qian, Peng and Liu, Qi and Wang, Xiang and He, Qinming},
-  booktitle = {Proceedings of the Twenty-Ninth International Joint Conference on
-               Artificial Intelligence, {IJCAI-20}},
-  publisher = {International Joint Conferences on Artificial Intelligence Organization}, 
-  pages     = {3283--3290},
-  year      = {2020},
-}
+VSC: [Vntchain Smart Contacts](https://drive.google.com/open?id=1FTb__ERCOGNGM9dTeHLwAxBLw7X5Td4v)
 
-``` 
+The train data after normalization:
 
+`training_data/LOOP_CORENODES_1317`, `LOOP_FULLNODES_1317`, `REENTRANCY_CORENODES_1671`, `REENTRANCY_FULLNODES_1671`
 
-## Running project
+## Running
 * To run program, use this command: python SMVulDetector.py.
 * In addition, you can use specific hyper-parameters to train the model. All the hyper-parameters can be found in `parser.py`.
 
@@ -53,16 +45,22 @@ done
 Then, you can find the training results in the `logs/`.
 
 
-### Dataset
-ESC: [Ethereum Smart Contracts](https://drive.google.com/open?id=1h9aFFSsL7mK4NmVJd4So7IJlFj9u0HRv)
-
-VSC: [Vntchain Smart Contacts](https://drive.google.com/open?id=1FTb__ERCOGNGM9dTeHLwAxBLw7X5Td4v)
-
-The train data after normalization:
-
-`training_data/LOOP_CORENODES_1317`, `LOOP_FULLNODES_1317`, `REENTRANCY_CORENODES_1671`, `REENTRANCY_FULLNODES_1671`
-
-
 ### Reference
 1. The code borrows from [graph_unet](https://github.com/bknyaz/graph_nn)
 2. Thomas N. Kipf, Max Welling, Semi-Supervised Classification with Graph Convolutional Networks, ICLR 2017
+
+
+## Citation
+Please use this citation if you want to cite our [paper](https://www.ijcai.org/Proceedings/2020/0454.pdf) or codebase in your paper:
+```
+@inproceedings{ijcai2020-454,
+  title     = {Smart Contract Vulnerability Detection using Graph Neural Network},
+  author    = {Zhuang, Yuan and Liu, Zhenguang and Qian, Peng and Liu, Qi and Wang, Xiang and He, Qinming},
+  booktitle = {Proceedings of the Twenty-Ninth International Joint Conference on
+               Artificial Intelligence, {IJCAI-20}},
+  publisher = {International Joint Conferences on Artificial Intelligence Organization}, 
+  pages     = {3283--3290},
+  year      = {2020},
+}
+
+``` 
