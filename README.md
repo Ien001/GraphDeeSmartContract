@@ -1,8 +1,5 @@
-# GraphDeeSmartContract ![GitHub stars](https://img.shields.io/github/stars/Messi-Q/GraphDeeSmartContract.svg?style=plastic) ![GitHub forks](https://img.shields.io/github/forks/Messi-Q/GraphDeeSmartContract.svg?color=blue&style=plastic) ![License](https://img.shields.io/github/license/Messi-Q/GraphDeeSmartContract.svg?color=blue&style=plastic)
 
-This repo is a python implementation of smart contract vulnerability detection using graph neural networks (DR-GCN).
-
-
+# (To run this repo)
 ## Requirements
 ### Required Packages
 * **python**3 or above
